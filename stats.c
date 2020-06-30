@@ -14,14 +14,15 @@
  *
  * <Add Extended Description Here>
  *
- * @author <Add FirsName LastName>
- * @date <Add date >
+ * @author Mohamed Salah
+ * @date 28/6/2020
  *
  */
 
 
 
 #include <stdio.h>
+#include <math.h>
 #include "stats.h"
 
 /* Size of the Data Set */
@@ -36,9 +37,15 @@ void main() {
                                 7,  87, 250, 230,  99,   3, 100,  90};
 
   /* Other Variable Declarations Go Here */
-  
+unsigned char mean,median,maximum,minimum;
   /* Statistics and Printing Functions Go Here */
-
+print_array(test);
+sort_array(test);
+mean=find_mean(test);
+median=find_median(test);
+maximum=find_maximum(test);
+minimum=find_minimum(test);
+print_statistcs(maximum,minimum,median,mean);
 }
 
 /* Add other Implementation File Code Here */
